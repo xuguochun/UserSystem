@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="cn.gyyx.test.humingyuan.dao.IUserInfo">
+  	<resultMap type="UserBean" id="userResultMap">
+  		<result property="code" column="code" />
+  		<result property="username" column="name" />
+  		<result property="password" column="pwd" />
+  		<result property="sex" column="sex" />
+  		<result property="age" column="age" />
+  		<result property="mail" column="mail" />
+  	</resultMap>
+  	<insert id="insertUser" parameterType="UserBean">
+  		insert into humingyuan_user_tb (name,pwd,sex,age,mail)
+  		values (#{username},#{password},#{sex},#{age},#{mail})
+  		<selectKey resultType="Integer" keyProperty="code"
+			keyColumn="code" order="AFTER">
+			select @@identity as code
+		</selectKey>
+	</insert>
+	<select id="selectByAccounts" resultMap="userResultMap">
+       SELECT 
+       code,name,pwd,sex,age,mail
+       FROM humingyuan_user_tb
+       <where>
+			<if test="array != null">
+				name in
+				<foreach item="item" open="(" close=")" separator=","
+					collection="array">
+					#{item}
+				</foreach>
+			</if>
+		</where>
+	</select>
+  </mapper>

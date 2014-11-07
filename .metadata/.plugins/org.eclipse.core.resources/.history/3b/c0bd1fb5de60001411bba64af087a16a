@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------------- 
+* 版权所有：北京光宇在线科技有限责任公司
+* 作者：胡明远
+* 联系方式：xuguochun@gyyx.cn
+* 创建时间： 2014/10/31 17:15:00
+* 版本号：v1.0 
+* 本类主要用途描述：
+* 
+-------------------------------------------------------------------------*/ 
+package cn.gyyx.test;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * @author 注册用户控制器
+ *
+ */
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+	private static final Logger logger = LoggerFactory
+			.getLogger(UserController.class);
+	
+	
+	
+}

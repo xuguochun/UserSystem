@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>User</title>
+</head>
+<body>
+<h1>
+	用户列表：  <a href="/ui/register">注册</a> 
+</h1>
+  <form  method="get" action="/ui">
+<table  >
+    <th>用户账号</th><th>用户密码</th><th>年龄</th><th>性别</th><th>Email</th>
+	#foreach($item in $users)	
+    <tr>
+		<td>$item.getUserName()</td>
+		<td>$item.getPassword()</td>
+		<td>$item.getAge()</td>
+		<td>$item.getSex()</td>
+		<td>$item.getMail()</td>
+	</tr>
+#end
+
+</table>
+
+</body>
+</html>

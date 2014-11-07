@@ -1,0 +1,12 @@
+package cn.gyyx.test;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 用户列表
+ */
+@Controller
+
+public class UserController {
+
+}

@@ -1,0 +1,11 @@
+package cn.gyyx.test;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * ÓÃ»§×¢²á
+ */
+@Controller
+public class UserController {
+
+}

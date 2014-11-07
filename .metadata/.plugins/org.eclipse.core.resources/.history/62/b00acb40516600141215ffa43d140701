@@ -1,0 +1,21 @@
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>user register</title>
+
+	</head>
+	<body >
+        <form  method="post" action="/ui/register">
+			请填写注册信息：<br/><br/>
+			账号：<input id="username" name="username" type="text" maxLength="20"/><br/>
+			密码：<input id="password" name="password" type="password" maxLength="20"/><br/>
+			年龄：<input id="age" name="age" type="text" maxLength="20"/><br/>
+			性别：<input id="age" name="age" type="text" maxLength="20"/><br/>
+			邮箱：<input id="mail" name="mail" type="text" maxLength="20"/><br/><br/>
+			<input  type="submit" value="注册"/> <a href="/ui">返回</a> 
+			 <font color="red"> $message  </font>
+        </form>
+
+</form>
+    </body>
+</html>

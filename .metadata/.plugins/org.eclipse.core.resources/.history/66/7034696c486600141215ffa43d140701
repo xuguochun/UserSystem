@@ -1,0 +1,18 @@
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>home vm</title>
+
+	</head>
+	<body >
+        <form  method="post" action="/java/login">
+			ĞÕÃû xuguochun ÃÜÂë 123456<br/>
+			ĞÕÃû£º<input id="name" name="name" type="text" maxLength="20"/><br/>
+			ÃÜÂë£º<input id="password" name="password" type="password" maxLength="20"/><br/>
+			<input  type="submit" value="µÇÂ¼"/>
+			 <font color="red"> $message  </font>
+        </form>
+
+</form>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>User</title>
+</head>
+<body>
+<h1>
+	用户列表：
+</h1>
+
+<P>  The time on the server is ${serverTime}.你好</P>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>user register</title>
+
+	</head>
+	<body >
+        <form  method="post" action="/ui/register">
+			ÇëÌîĞ´×¢²áĞÅÏ¢£º<br/>
+			ÕËºÅ£º£º<input id="username" name="username" type="text" maxLength="20"/><br/>
+			ÃÜÂë£º<input id="password" name="password" type="password" maxLength="20"/><br/>
+			<input  type="submit" value="µÇÂ¼"/>
+			 <font color="red"> $message  </font>
+        </form>
+
+</form>
+    </body>
+</html>
